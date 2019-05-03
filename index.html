@@ -2,11 +2,22 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>demo</title>
+    <script type="text/javascript">
+      function changeLink()
+      {
+        document.getElementById("myAnchor").innerHTML="访问 gmail"
+        document.getElementById("myAnchor").href="https://mail.google.com/mail/u/0/#inbox"
+        document.getElementById("myAnchor").target="_blank"
+      }
+    </script>
   </head>
   <body>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       document.write("hello world")
-    </script>
+    </script> -->
+    <a id="myAnchor" href="http://www.baidu.com">访问 baidu</a>
+
+    <input type="button" onclick="changeLink()" value="改变链接">
   </body>
 </html>
