@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <script type="text/javascript">
-      document.write("hello world")
-    </script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>demo</title>
+  <script type="text/javascript">
+    function message() {
+      alert("uedbyron是通过 onload 事件调用的")
+    }
+    //js设置加载弹出框,body上添加onload//
+    function changeLink() {
+      document.getElementById("test").innerHTML = "访问 gmail"
+      document.getElementById("test").href = "https://mail.google.com/mail/u/0/#inbox"
+      document.getElementById("test").target = "_blank"
+      document.getElementById("test").style.fontSize = "50px"
+      document.getElementById("test").style.color = "red"
+    }
+    //js点击改变属性 内容//
+    document.write("该消息在页面加载时输出")
+    //注意标点符号 全部是英文标点//
+  </script>
+
+</head>
+
+<body onload="message()">
+  <br>
+  <a id="test" href="http://www.baidu.com">访问 baidu</a>
+  <script type="text/javascript">
+    document.write("hello world")
+  </script>
+  <input type="button" onclick="changeLink()" value="改变链接">
+  <div class="learn-inner">
+    <h3>jx使用方法1</h3>
+    <p>document.getElementById改变样式 (style.color 多个单词style.fontSize第二个单词首字母大写)</p>
+  </div>
+</body>
+
 </html>
