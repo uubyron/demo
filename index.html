@@ -18,7 +18,7 @@
 
     //注意标点符号 全部是英文标点1//
     function myFunction() {
-      document.getElementById("demo").innerHTML = "my first javascript Function"
+      document.getElementById("demo").innerHTML = "my first javascript Function";
     }
   </script>
 </head>
@@ -31,18 +31,20 @@
     <button type="button" onclick="myFunction()" name="button">try it</button>
   </div>
   <div class="demo2">
-
-    <div class="demo3">
-      <script type="text/javascript">
-        document.write("hello world")
-      </script>
-      <h1>demo2：js点击改变文字</h1>
-
-    </div>
+    <script type="text/javascript">
+      document.write("hello world")
+    </script>
+    <h1>demo2：js点击改变文字</h1>
     <a id="test" href="http://www.baidu.com">访问 baidu</a>
     <input type="button" onclick="changeLink()" value="改变链接">
     <div class="learn-inner">
       <p>document.getElementById改变样式 (style.color 多个单词style.fontSize第二个单词首字母大写)</p>
+    </div>
+    <div class="demo3">
+      <script>
+        document.getElementById("first").innerHTML = "WTF";
+        document.getElementById("second").innerHTML = "what the fuck";
+      </script>
     </div>
   </div>
 </body>
