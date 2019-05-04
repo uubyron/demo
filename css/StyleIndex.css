@@ -1,0 +1,19 @@
+
+.demo1{
+  width: 1000px;
+  border: 1px solid #ddd;
+  border-radius: 5px 5px 5px 5px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 30px;
+  margin-bottom: 20px;
+}
+.demo2{
+  width: 1000px;
+  border: 1px solid #ddd;
+  border-radius: 5px 5px 5px 5px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 30px;
+  margin-bottom: 20px;
+}

@@ -1,6 +1,7 @@
 <head>
   <meta charset="utf-8">
   <title>demo</title>
+  <link rel="stylesheet" href="css/StyleIndex.css">
   <script type="text/javascript">
     function message() {
       alert("uedbyron是通过 onload 事件调用的")
@@ -14,22 +15,35 @@
       document.getElementById("test").style.color = "red"
     }
     //js点击改变属性 内容//
-    document.write("该消息在页面加载时输出")
-    //注意标点符号 全部是英文标点1//
-  </script>
 
+    //注意标点符号 全部是英文标点1//
+    function myFunction() {
+      document.getElementById("demo").innerHTML = "my first javascript Function"
+    }
+  </script>
 </head>
 
-<body onload="message()">
+<body>
   <br>
-  <a id="test" href="http://www.baidu.com">访问 baidu</a>
-  <script type="text/javascript">
-    document.write("hello world")
-  </script>
-  <input type="button" onclick="changeLink()" value="改变链接">
-  <div class="learn-inner">
-    <h3>jx使用方法1</h3>
-    <p>document.getElementById改变样式 (style.color 多个单词style.fontSize第二个单词首字母大写)</p>
+  <div class="demo1">
+    <h1>demo1：js点击改变文字</h1>
+    <p id="demo">A paragraph</p>
+    <button type="button" onclick="myFunction()" name="button">try it</button>
+  </div>
+  <div class="demo2">
+
+    <div class="demo3">
+      <script type="text/javascript">
+        document.write("hello world")
+      </script>
+      <h1>demo2：js点击改变文字</h1>
+
+    </div>
+    <a id="test" href="http://www.baidu.com">访问 baidu</a>
+    <input type="button" onclick="changeLink()" value="改变链接">
+    <div class="learn-inner">
+      <p>document.getElementById改变样式 (style.color 多个单词style.fontSize第二个单词首字母大写)</p>
+    </div>
   </div>
 </body>
 
