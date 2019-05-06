@@ -20,9 +20,12 @@
     function myFunction() {
       document.getElementById("demo").innerHTML = "my first javascript Function";
     }
+    function myFunction(){
+      x=document.getElementById("demo3");
+      x.innerHTML="hello world";
+    }
   </script>
 </head>
-
 <body>
   <br>
   <div class="demo1">
@@ -37,16 +40,14 @@
     <h1>demo2：js点击改变文字</h1>
     <a id="test" href="http://www.baidu.com">访问 baidu</a>
     <input type="button" onclick="changeLink()" value="改变链接">
-    <div class="learn-inner">
-      <p>document.getElementById改变样式 (style.color 多个单词style.fontSize第二个单词首字母大写)</p>
+      <div class="learn-inner">
+        <p>document.getElementById改变样式 (style.color 多个单词style.fontSize第二个单词首字母大写)</p>
+      </div>
     </div>
     <div class="demo3">
-      <script>
-        document.getElementById("first").innerHTML = "WTF";
-        document.getElementById("second").innerHTML = "what the fuck";
-      </script>
+      <p id="demo3">Hi pig</p>
+      <button type="button" onclick="myFunction()" name="button">Hi fox</button>
     </div>
-  </div>
 </body>
 
 </html>
